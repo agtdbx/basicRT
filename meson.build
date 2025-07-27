@@ -8,6 +8,8 @@ project('newRT', 'cpp',
 srcs = [
   'srcs/InputManager.cpp',
   'srcs/main.cpp',
+  'srcs/Sphere.cpp',
+  'srcs/Camera.cpp',
 ]
 
 executable('newRT',
@@ -16,6 +18,7 @@ executable('newRT',
           dependencies : [
               dependency('sfml', static: true),
               dependency('libjson', static: true),
+              dependency('libgmath', static: true),
           ],
           include_directories: include_directories('srcs'),
           install : true)
