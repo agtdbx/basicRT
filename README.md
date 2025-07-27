@@ -1,7 +1,13 @@
 # Project
-This is a base of game project with in c++ with SFML.
+This is a base of ray tracing renderer in c++ with SFML.
 
 # Setup
+If you don't have meson or ninja, you can install the like this :
+```bash
+pip install  meson ninja
+```
+Don't forget to put them into the path.
+
 This step isn't requiered if you already have openal.
 ```bash
 make install
